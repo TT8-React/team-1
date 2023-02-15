@@ -42,13 +42,14 @@ export const Labels = styled.label`
 export const Span = styled.span`
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 600;
   color:${({ color }) => color || "#000000"};
   margin-right:${({ margin }) => margin};
   font-size:${({ fontSize }) => fontSize || "16px"};
   border-bottom:${({ border }) => border};
   padding:${({ padding }) => padding};
   margin:${({ margins }) => margins};
+  font-weight: ${({ fontWeight }) => fontWeight || "600"};
+
 `
 export const InputField = styled.input`
 background: #FFFFFF;
@@ -87,4 +88,10 @@ border:${({ border }) => border};
 margin:${({ margin }) => margin};
 position:${({ position }) => position};
 cursor: pointer;
+`
+
+export const Li = styled.li`
+font-size: 22px;
+line-height: 1.6;
+
 `
