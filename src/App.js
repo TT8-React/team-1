@@ -12,6 +12,7 @@ import Register from './Pages/Auth/Register';
 import Verification from './Pages/Auth/Verification';
 import CompanyDetails from './Pages/Home/CompanyDetails';
 import Dashboard from './Pages/Home/Dashboard';
+import Report from './Pages/Home/Reports';
 import { RouteWrapper } from './routes/RouteWrapper'
 import './App.css'
 function App() {
@@ -27,7 +28,7 @@ function App() {
               <Route path={"/verification"} component={Verification} />
               <RouteWrapper path="/profile-details" exact component={Dashboard} layout={BaseLayout} />
               <RouteWrapper path="/company-details" exact component={CompanyDetails} layout={BaseLayout} />
-              <RouteWrapper path="/report" exact component={Dashboard} layout={BaseLayout} />
+              <RouteWrapper path="/report" exact component={Report} layout={BaseLayout} />
               <RouteWrapper path="/" exact component={Dashboard} layout={BaseLayout} />
             </Switch>
           </Router>
