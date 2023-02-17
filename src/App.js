@@ -1,3 +1,4 @@
+
 import React, { Suspense } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ErrorBoundary from "./Components/ErrorBoundary/ErrorBoundary";
@@ -13,6 +14,7 @@ import { RouteWrapper } from "./routes/RouteWrapper";
 
 import "./App.css";
 
+
 function App() {
   return (
     <>
@@ -25,6 +27,7 @@ function App() {
               <Route path={"/register"} component={Register} />
               <Route path={"/forgetPassword"} component={ForgetPassword} />
               <Route path={"/verification"} component={Verification} />
+
               <RouteWrapper
                 path="/profile-details"
                 exact
@@ -53,6 +56,7 @@ function App() {
           </Router>
         </ErrorBoundary>
       </Suspense>
+
     </>
   );
 }

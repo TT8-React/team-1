@@ -74,15 +74,18 @@ export const Anckor = styled.a`
   font-weight: ${({ fontWeight }) => fontWeight || "600"};
 `;
 export const ButoonLogin = styled.button`
-  border-radius: ${({ borderRuidus }) => borderRuidus || "6"}px;
-  width: ${({ width }) => width};
-  margin-top: ${({ marginTop }) => marginTop || ".6"}rem;
-  padding: ${({ padding }) => padding || ".8"}rem;
-  font-size: ${({ fontSize }) => fontSize || "16"}px;
-  color: ${({ color }) => color || "#FFFFFF"};
-  background: ${({ background }) => background || "#000000"};
-  border: none;
-  font-weight: ${({ fontWeight }) => fontWeight || "600"};
-  border: ${({ border }) => border};
-  margin: ${({ margin }) => margin};
-`;
+
+ border-radius:${({ borderRuidus }) => borderRuidus || "6"}px;
+width: ${({ width }) => width};
+margin-top: ${({ marginTop }) => marginTop || ".6"}rem;
+padding: ${({ padding }) => padding || ".8"}rem;
+font-size: ${({ fontSize }) => fontSize || "16"}px;
+color:${({ color }) => color || "#FFFFFF"};
+background: ${({ background }) => background || "#000000"};
+border: none;
+font-weight: ${({ fontWeight }) => fontWeight || "600"};
+border:${({ border }) => border};
+margin:${({ margin }) => margin};
+position:${({ position }) => position};
+cursor: pointer;
+`
