@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  ActionField,
   Table,
   TableBody,
   TableField,
@@ -8,6 +9,7 @@ import {
   TableTitle,
 } from "./table.styles";
 import tableData from "./data.js";
+import { DeletIcon, EditTextIcon } from "../SVGs/icons";
 
 let nextId = 1;
 
@@ -19,6 +21,7 @@ function Index() {
           {tableData.header.map((item) => (
             <TableTitle>{item}</TableTitle>
           ))}
+          <TableTitle>Action</TableTitle>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -27,6 +30,10 @@ function Index() {
             {tableData.rows[row].map((rowField) => (
               <TableField key={nextId++}>{rowField}</TableField>
             ))}
+            <ActionField>
+              <EditTextIcon />
+              <DeletIcon />
+            </ActionField>
           </TableRow>
         ))}
       </TableBody>

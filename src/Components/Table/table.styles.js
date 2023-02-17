@@ -50,3 +50,11 @@ export const TableField = styled.td`
   ${tableCell}/* text-align: center;  */
   /* border: 1px solid; */
 `;
+
+export const ActionField = styled(TableField)`
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  /* border: 1px solid black; */
+`;
