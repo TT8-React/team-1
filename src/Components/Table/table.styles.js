@@ -16,6 +16,7 @@ const tableRow = css`
 const tableCell = css`
   padding-block: 0.6rem;
   padding-inline: 1.5rem;
+  border: 1px solid;
   /* border-bottom: 1px solid black; */
   /* width: 100%; */
 
@@ -29,11 +30,12 @@ const tableCell = css`
 export const Table = styled.table`
   /* border: 1px solid black;
   border-bottom-color: transparent; */
+  border-collapse: collapse;
 `;
 
 export const TableHead = styled.thead`
+  background-color: #828282;
   /* ${tableRow} */
-  background-color: #e5e5e5;
 `;
 
 export const TableBody = styled.tbody``;
@@ -48,13 +50,14 @@ export const TableTitle = styled.th`
 `;
 export const TableField = styled.td`
   ${tableCell}/* text-align: center;  */
-  /* border: 1px solid; */
 `;
 
 export const ActionField = styled(TableField)`
   display: flex;
   justify-content: center;
   gap: 1rem;
-  align-items: center;
+  /* height: 100%; */
+  background-color: blue;
+  /* align-items: stretch; */
   /* border: 1px solid black; */
 `;
