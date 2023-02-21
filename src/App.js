@@ -15,6 +15,7 @@ import Dashboard from './Pages/Home/Dashboard';
 import Report from './Pages/Home/Reports';
 import ReportTable from './Components/ReportTable';
 import SEBI from './Pages/Home/Reports/SEBIReport';
+import GRI from './Pages/Home/Reports/GRIReport';
 import { RouteWrapper } from './routes/RouteWrapper'
 
 function App() {
@@ -25,14 +26,15 @@ function App() {
           <Router>
             <Switch>
               <Route path={"/login"} component={Login} />
-              <Route path={"/register"} component={Register} />
-              <Route path={"/forgetPassword"} component={ForgetPassword} />
+              <Route path={"/register"} component={Register}/>
+              <Route path={"/forgetPassword"} component={ForgetPassword}/>
               <Route path={"/verification"} component={Verification} />
-              <RouteWrapper path="/profile-details" exact component={Dashboard} layout={BaseLayout} />
+              <RouteWrapper path="/profile-details" exact component={Dashboard} layout={BaseLayout}/>
               <RouteWrapper path="/company-details" exact component={CompanyDetails} layout={BaseLayout} />
               <RouteWrapper path="/report" exact component={Report} layout={BaseLayout} /> 
-              <RouteWrapper path="/report/sebi-report" exact component={SEBI} layout={BaseLayout} />
-              <RouteWrapper path="/" exact component={ReportTable} layout={BaseLayout} />
+              <RouteWrapper path="/report/sebi-report" exact component={SEBI} layout={BaseLayout}/>
+              <RouteWrapper path="/report/gri-report" exact component={GRI} layout={BaseLayout} />
+              <RouteWrapper path="/" exact component={Dashboard} layout={BaseLayout} />
             </Switch>
           </Router>
         </ErrorBoundary>
